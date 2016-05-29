@@ -1,0 +1,53 @@
+{
+  "name": "github-search",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Github search for selected text",
+  "keywords": [
+    "github",
+    "search"
+  ],
+  "activationCommands": {
+    "atom-workspace": "github-search:toggle"
+  },
+  "repository": "https://github.com/aki77/atom-github-search",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "@aki77/atom-input-dialog": "^0.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^2.11.0",
+    "eslint-config-airbnb-base": "3.0.1",
+    "eslint-plugin-import": "1.8.1"
+  },
+  "configSchema": {
+    "grammarLanguageMappings": {
+      "order": 1,
+      "type": "array",
+      "default": [
+        {
+          "name": "Ruby on Rails",
+          "language": "Ruby"
+        },
+        {
+          "name": "Babel ES6 JavaScript",
+          "language": "JavaScript"
+        }
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "language":  {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

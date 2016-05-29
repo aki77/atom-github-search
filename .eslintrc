@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "atom": true
+  },
+  "rules": {
+    "import/no-unresolved": [2, {
+      "ignore": ["^atom$", "^electron$"]
+    }]
+  }
+}
