@@ -1,7 +1,7 @@
 {
   "name": "github-search",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Github search for selected text",
   "keywords": [
     "github",
@@ -43,7 +43,7 @@
           "name": {
             "type": "string"
           },
-          "language":  {
+          "language": {
             "type": "string"
           }
         }
